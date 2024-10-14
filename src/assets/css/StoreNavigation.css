@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.card-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  position: absolute; 
+  z-index: 1000; 
+  top: 105px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  transition: all 0.5s ease;
+}
+
+.card-nav:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.nav-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-column li {
+  margin-bottom: 10px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.nav-column h2, .nav-column h3 {
+  margin-bottom: 10px;
+}
+
+.nav-column h2 {
+  font-size: 18px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.nav-column h3 {
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.nav-column h3:hover {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.nav-column li:hover {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+

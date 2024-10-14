@@ -1,0 +1,115 @@
+.Navbar {
+  background-color: black;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.Navbar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.Navbar img {
+  margin-right: 20px; 
+}
+
+.Navbar ul li {
+  display: inline-block; 
+  margin-right: 30px; 
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+.Navbar ul li:last-child {
+  margin-right: 0; 
+}
+
+.Navbar ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.Navbar ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.Navbar ul li a:hover::after {
+  background-color: white;
+}
+
+.button-search {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  margin-right: 20px; 
+}
+
+.span-button-search {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.button-search::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: black;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.button-search:hover {
+  color: #fff;
+}
+
+.button-search:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.shopping-cart-icon {
+  width: 50px; 
+  height: 50px;
+  margin-right: 20px;
+  fill: white;
+}
+
+.account-icon {
+  width: 50px; 
+  height: 50px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons button {
+  margin-right: 20px; 
+}
