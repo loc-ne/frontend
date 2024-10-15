@@ -13,7 +13,7 @@ const LoginForm = () => {
     useEffect(() => {
         const checkLogin = async () => {
             try {
-                const response = await fetch('http://localhost:5000/check_login', {
+                const response = await fetch('https://backend-m0xr.onrender.com/check_login', {
                     method: 'GET',
                     credentials: 'include'
                 });
@@ -41,7 +41,7 @@ const LoginForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/login', {
+            const response = await fetch('https://backend-m0xr.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
