@@ -17,7 +17,7 @@ const OrderDetail = () => {
     useEffect(() => {
         const getOrderDetailData = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/get_order_detail?order_id=${order_id}`)
+                const response = await fetch(`https://backend-m0xr.onrender.com/get_order_detail?order_id=${order_id}`)
 
                 if (response.ok) {
                     const result = await response.json();
