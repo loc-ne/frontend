@@ -13,7 +13,7 @@ const OrdersOverview = () => {
         const getOrderData = async () => {
             console.log(user_id);  
             try {
-                const response = await fetch(`http://localhost:5000/get_order?user_id=${user_id}`)
+                const response = await fetch(`https://backend-m0xr.onrender.com/get_order?user_id=${user_id}`)
 
                 if (response.ok) {
                     const result = await response.json();
