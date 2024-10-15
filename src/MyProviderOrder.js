@@ -11,7 +11,7 @@ const MyProviderOrder = ({ children }) => {
         setOrdersData(updatedProducts);
 
         try {
-            const response = await fetch(`http://localhost:5000/remove_order?order_id=${order_id}`)
+            const response = await fetch(`https://backend-m0xr.onrender.com/remove_order?order_id=${order_id}`)
 
             const data = await response.json();
 
