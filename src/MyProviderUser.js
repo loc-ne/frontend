@@ -13,7 +13,7 @@ const MyProviderUser = ({ children }) => {
 
     const checkLogin = async () => {
         try {
-            const response = await fetch('http://localhost:5000/check_login', {
+            const response = await fetch('https://backend-m0xr.onrender.com/check_login', {
                 method: 'GET',
                 credentials: 'include'
             });
