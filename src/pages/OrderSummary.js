@@ -29,7 +29,7 @@ const OrderSumary = () => {
             const secureHashType = queryParams.get('vnp_SecureHashType');
 
             try {
-                const response = await fetch(`http://localhost:5000/payment_ipn?vnp_ResponseCode=${responseCode}`, {
+                const response = await fetch(`https://backend-m0xr.onrender.com/payment_ipn?vnp_ResponseCode=${responseCode}`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ const OrderSumary = () => {
                 if (response.ok) {
                     const result = await response.json();
                     if (result.Message == 'Order payment success') {
-                        const updateResponse = await fetch(`http://localhost:5000/update_order?order_id=${order_id}`)
+                        const updateResponse = await fetch(`https://backend-m0xr.onrender.com/update_order?order_id=${order_id}`)
                         const data = await updateResponse.json();
                         setOrderData(data.updated_orders);
 
