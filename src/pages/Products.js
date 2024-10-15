@@ -20,7 +20,7 @@ const Products = () => {
 
     const fetchData = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/product_detail?id=${id}`);
+            const response = await fetch(`https://backend-m0xr.onrender.com/product_detail?id=${id}`);
 
             if (!response.ok) {
                 throw new Error('Failed to fetch data');
