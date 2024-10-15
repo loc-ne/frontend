@@ -112,7 +112,7 @@ const Checkout = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5000/payment', {
+            const response = await fetch('https://backend-m0xr.onrender.com/payment', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -180,7 +180,7 @@ const Checkout = () => {
         const order_date = `${day}.${month}.${year}`; 
         
         try {
-            const response = await fetch('http://localhost:5000/order', {
+            const response = await fetch('https://backend-m0xr.onrender.com/order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
