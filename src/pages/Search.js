@@ -27,7 +27,7 @@ const Search = () => {
         const fetchData = async () => {
             try {
 
-                const response = await fetch(`http://localhost:5000/search${queryString}`);
+                const response = await fetch(`https://backend-m0xr.onrender.com/search${queryString}`);
 
                 const data = await response.json();
                 setShoesData(data);
