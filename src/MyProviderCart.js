@@ -65,7 +65,7 @@ const MyProviderCart = ({ children }) => {
 
     const updateCartOnServer = async (cartData, userId) => {
         try {
-            const response = await fetch('http://localhost:5000/update_cart', {
+            const response = await fetch('https://backend-m0xr.onrender.com/update_cart', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
