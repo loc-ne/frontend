@@ -38,14 +38,14 @@ const Shoes = () => {
                 if (!request) return;
                 let response;
                 if (request === 'all') {
-                    response = await fetch(`http://localhost:5000/products?fit=${gender}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?fit=${gender}`);
                 } else if (request === 'bestseller' || request === 'sale') {
-                    response = await fetch(`http://localhost:5000/products?fit=${gender}&tag=${request}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?fit=${gender}&tag=${request}`);
                 } else if (request === 'sport') {
-                    response = await fetch(`http://localhost:5000/products?fit=${gender}&tag=${request}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?fit=${gender}&tag=${request}`);
                 }
                 else {
-                    response = await fetch(`http://localhost:5000/products?category=${request}&fit=${gender}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?category=${request}&fit=${gender}`);
                 }
 
                 if (!response.ok) {
@@ -189,17 +189,17 @@ const Shoes = () => {
             try {
                 let response
                 if (request === 'all' && queryString === '') {
-                    response = await fetch(`http://localhost:5000/products?fit=${gender}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?fit=${gender}`);
                 } else if (request === 'bestseller' || request === 'sale') {
-                    response = await fetch(`http://localhost:5000/products?fit=${gender}&tag=${request}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?fit=${gender}&tag=${request}`);
                 } else if (request === 'sport') {
-                    response = await fetch(`http://localhost:5000/products?fit=${gender}&tag=${request}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?fit=${gender}&tag=${request}`);
                 }
                 else if (request !== 'all') {
-                    response = await fetch(`http://localhost:5000/products?category=${request}&fit=${gender}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/products?category=${request}&fit=${gender}`);
                 }
                 else {
-                    response = await fetch(`http://localhost:5000/filter${queryString}`);
+                    response = await fetch(`https://backend-m0xr.onrender.com/filter${queryString}`);
                 }
                 const data = await response.json();
                 setShoesData(data);
