@@ -9,7 +9,7 @@ const useCart = (userId) => {
     useEffect(() => {
         const fetchCartData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/get_cart', {
+                const response = await fetch('https://backend-m0xr.onrender.com/get_cart', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
