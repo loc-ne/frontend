@@ -1,0 +1,5 @@
+VNPAY_RETURN_URL = 'https://frontend-yntcf4g1z-locnes-projects.vercel.app/order_sumary'  
+VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'  
+VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'
+VNPAY_TMN_CODE = '03747YPG'  
+VNPAY_HASH_SECRET_KEY = '' 
