@@ -78,5 +78,6 @@ This project is for:
 - Applying Tailwind CSS for responsive UI design
 - Understanding payment integration and order tracking
 - Deploy production
-<!-- Upload tại giphy.com -->
-![Demo](docs/demos/payment-demo.gif)
+## demo
+![Demo](docs/demos/demo.gif)
+
